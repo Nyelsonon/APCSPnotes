@@ -1,15 +1,19 @@
 # APCSPnotes
 
 ## What is bandwidth?
+
 -	The capacity of data transfer in a system. Measured by bitrate.
+
 ## What is bitrate?
+
 -	The number of bits a system can send per second.
+
 ## What is latency?
+
 -	The time it takes for a bit to travel from sender to receiver
 
-# Sending Information:
-
 ## How do computers find each other?
+
 -	Computers find other computers through addressing.
 -	Every device has its own unique address.
 -	Data sent has a to address as well as a from address.
@@ -21,11 +25,13 @@
 -	2nd num = 
 
 ## How to give human readable names to IP Addresses?
+
 -	Websites register a name
 -	DNS maps domains to IP address
 google.com -> 172.217.18.174
 
 ## How to request resources off the web?(DNS System)
+
 -	DNS translates name to IP.
 -	Check memory(cache) to see if address is already existing.
 -	Find where com lives, ask root server where com is.
@@ -41,6 +47,7 @@ google.com -> 172.217.18.174
 -	Easier to search in the hierarchy rather than the entire internet
 
 ## How do we make information get to a destination?
+
 -	Routing
 -	Routing is set by router
 -	Rather than making individual connections, put router
@@ -63,3 +70,22 @@ google.com -> 172.217.18.174
 -	Packets are labeled with metadata
 -	Data is structured with http protocol
 -	describes how computers can request and recieve hypertext info
+-	http = hypertext protocol
+-	https = hypertext protocol secure
+-	https is more secure
+-	https encrypts data
+-	parses and renders to return to user
+-	TCP, IP, DNS, ROUTING work together to send info
+
+## Entire Process
+-	Start with the URL
+-	Break into domain and path
+-	From the url constructs a http request
+-	sends url to DNS
+-	DNS gets the IP adress for URL
+-	returns final IP address
+-	break http request into packets with TCP/IP
+-	all packets get seperately sent through the networks
+-	reads packets for missing info
+-	server constructs http response
+-	returns to user
