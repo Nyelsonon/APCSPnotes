@@ -1,15 +1,15 @@
 # APCSPnotes
 
-|| What is bandwidth?
+## What is bandwidth?
 -	The capacity of data transfer in a system. Measured by bitrate.
-|| What is bitrate?
+## What is bitrate?
 -	The number of bits a system can send per second.
-|| What is latency?
+## What is latency?
 -	The time it takes for a bit to travel from sender to receiver
 
-| Sending Information:
+# Sending Information:
 
-|| How do computers find each other?
+## How do computers find each other?
 -	Computers find other computers through addressing.
 -	Every device has its own unique address.
 -	Data sent has a to address as well as a from address.
@@ -20,12 +20,12 @@
 -	1st num = network 
 -	2nd num = 
 
-|| How to give human readable names to IP Addresses?
+## How to give human readable names to IP Addresses?
 -	Websites register a name
 -	DNS maps domains to IP address
 google.com -> 172.217.18.174
 
-|| How to request resources off the web?(DNS System)
+## How to request resources off the web?(DNS System)
 -	DNS translates name to IP.
 -	Check memory(cache) to see if address is already existing.
 -	Find where com lives, ask root server where com is.
@@ -40,7 +40,7 @@ google.com -> 172.217.18.174
 -	Allows for items to be added easily
 -	Easier to search in the hierarchy rather than the entire internet
 
-|| How do we make information get to a destination?
+## How do we make information get to a destination?
 -	Routing
 -	Routing is set by router
 -	Rather than making individual connections, put router
@@ -51,7 +51,7 @@ google.com -> 172.217.18.174
 -	Internet is fault tolerant
 -	Is hard to break
 
-|| Packets
+## Packets
 
 -	Data is broken into packets
 -	Once packets arrive they are pieced together
@@ -61,3 +61,5 @@ google.com -> 172.217.18.174
 -	Checks if all packets made to destination and were pieced together
 -	Metadata: tells order of packets
 -	Packets are labeled with metadata
+-	Data is structured with http protocol
+-	describes how computers can request and recieve hypertext info
